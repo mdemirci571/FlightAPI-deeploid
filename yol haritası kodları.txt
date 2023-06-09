@@ -1,0 +1,11 @@
+    0  cd ~
+    0  rm -rf *
+    2  git clone https://github.com/QadirAdamson/FlightAPI.git
+    4  cd FlightAPI/
+    5  python -m venv env
+    7  source env/bin/activate
+   10  pip install -r requirements.txt
+   13  mkdir static
+   13  python manage.py collectstatic
+   12  python manage.py migrate
+   13  python manage.py createsuperuser
